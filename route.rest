@@ -1,0 +1,24 @@
+# Example requests to API
+
+GET http://localhost:3000/subscribers
+###
+GET http://localhost:3000/subscribers/627ae86a18fad7c9097bf414
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+  "name": "Sam",
+  "subscribedToChannel": "Hashlips"
+}
+
+###
+DELETE http://localhost:3000/subscribers/627ae86a18fad7c9097bf414
+
+###
+PATCH http://localhost:3000/subscribers/627ae5f9b5dc67be77dcc996
+Content-Type: application/json
+
+{
+  "name": "New Name"
+}
